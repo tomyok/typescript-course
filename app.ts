@@ -53,27 +53,50 @@
 
 // Practicando tipos personalizados en TS
 
-type Heroe = {
+// type Heroe = {
+//     nombre:string,
+//     edad:number,
+//     poderes:any[],
+//     getNombre:()=>string
+// };
+
+// let flash: Heroe = {
+//     nombre: "Barry Allen",
+//     edad: 24,
+//     poderes: ["Puede correr", "Viajar en el tiempo"],
+//     getNombre(){
+//         return this.nombre;
+//     }
+// };
+
+// let superman: Heroe = {
+//     nombre: "Clark Kent",
+//     edad: 500,
+//     poderes: ["volar"],
+//         getNombre(){
+//         return this.nombre;
+//     }
+// };
+
+// Practica interfaz basica
+
+interface Xmen {
     nombre:string,
-    edad:number,
-    poderes:any[],
-    getNombre:()=>string
+    poder:string
+}
+
+function enviarMision( xmen : Xmen){
+    console.log("Enviando a: " + xmen.nombre)
 };
 
-let flash: Heroe = {
-    nombre: "Barry Allen",
-    edad: 24,
-    poderes: ["Puede correr", "Viajar en el tiempo"],
-    getNombre(){
-        return this.nombre;
-    }
+function enviarCuartel( xmen : Xmen){
+    console.log("Enviando al cuartel: " + xmen.nombre)
 };
 
-let superman: Heroe = {
-    nombre: "Clark Kent",
-    edad: 500,
-    poderes: ["volar"],
-        getNombre(){
-        return this.nombre;
-    }
+let wolverine = {
+    nombre: "Wolverine",
+    poder: "Regeneracion"
 };
+
+enviarMision(wolverine);
+enviarCuartel(wolverine);

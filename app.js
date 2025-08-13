@@ -3,21 +3,19 @@
 // let batman:string = "Batman";
 // let linternaVerde:string = 'Linterna Verde';
 // let volcanNegro:string = `Volcan Negro`;
-Object.defineProperty(exports, "__esModule", { value: true });
-let flash = {
-    nombre: "Barry Allen",
-    edad: 24,
-    poderes: ["Puede correr", "Viajar en el tiempo"],
-    getNombre() {
-        return this.nombre;
-    }
+//Object.defineProperty(exports, "__esModule", { value: true });
+function enviarMision(xmen) {
+    console.log("Enviando a: " + xmen.nombre);
+}
+;
+function enviarCuartel(xmen) {
+    console.log("Enviando al cuartel: " + xmen.nombre);
+}
+;
+let wolverine = {
+    nombre: "Wolverine",
+    poder: "Regeneracion"
 };
-let superman = {
-    nombre: "Clark Kent",
-    edad: 500,
-    poderes: ["volar"],
-    getNombre() {
-        return this.nombre;
-    }
-};
+enviarMision(wolverine);
+enviarCuartel(wolverine);
 //# sourceMappingURL=app.js.map
