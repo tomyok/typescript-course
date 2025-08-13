@@ -80,23 +80,46 @@
 
 // Practica interfaz basica
 
-interface Xmen {
-    nombre:string,
-    poder:string
+// interface Xmen {
+//     nombre:string,
+//     poder:string
+// }
+
+// function enviarMision( xmen : Xmen){
+//     console.log("Enviando a: " + xmen.nombre)
+// };
+
+// function enviarCuartel( xmen : Xmen){
+//     console.log("Enviando al cuartel: " + xmen.nombre)
+// };
+
+// let wolverine: Xmen = {
+//     nombre: "Wolverine",
+//     poder: "Regeneracion"
+// };
+
+// enviarMision(wolverine);
+// enviarCuartel(wolverine);
+
+//Practica clases en TS
+
+class Avenger {
+    nombre:string;
+    equipo:string;
+    nombreReal:string;
+    puedePelear:boolean;
+    peleasGanadas:number;
+
+    constructor( nombre:string, equipo:string, nombreReal:string){
+        console.log("Avenger Creado!");
+        this.nombre = nombre;
+        this.equipo = equipo;
+        this.nombreReal = nombreReal;
+        this.puedePelear = false;
+        this.peleasGanadas = 0;
+    }
 }
 
-function enviarMision( xmen : Xmen){
-    console.log("Enviando a: " + xmen.nombre)
-};
+let antman:Avenger = new Avenger("Antman", "CAP", "Scott Lang" )
 
-function enviarCuartel( xmen : Xmen){
-    console.log("Enviando al cuartel: " + xmen.nombre)
-};
-
-let wolverine = {
-    nombre: "Wolverine",
-    poder: "Regeneracion"
-};
-
-enviarMision(wolverine);
-enviarCuartel(wolverine);
+console.log(antman);
