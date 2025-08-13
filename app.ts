@@ -16,3 +16,17 @@
 // let villanos:string[] = ["Omega Rojo", "Dormammu", "Duende Verde"];
 
 // console.log(villanos[0]?.charAt(0));
+
+// Practica Objetos TS
+
+// let flash = {
+//     nombre: "Barry Allen",
+//     edad: 24,
+//     poderes: ["Puede correr", "Viajar en el tiempo"]
+// };
+
+// flash = {
+//     nombre: "Clark Kent",
+//     edad: 500,
+//     poderes: ["volar"]
+// };

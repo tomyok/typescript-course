@@ -12,4 +12,15 @@ Object.defineProperty(exports, "__esModule", { value: true });
 // let arreglo:number[] = [1,2,4,5,6,7];
 // let villanos:string[] = ["Omega Rojo", "Dormammu", "Duende Verde"];
 // console.log(villanos[0]?.charAt(0));
+// Practica Objetos TS
+// let flash = {
+//     nombre: "Barry Allen",
+//     edad: 24,
+//     poderes: ["Puede correr", "Viajar en el tiempo"]
+// };
+// flash = {
+//     nombre: "Clark Kent",
+//     edad: 500,
+//     poderes: ["volar"]
+// };
 //# sourceMappingURL=app.js.map
