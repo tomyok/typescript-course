@@ -30,3 +30,23 @@
 //     edad: 500,
 //     poderes: ["volar"]
 // };
+
+// Practica para crear tipos especificos en TS
+
+let flash: {nombre:string, edad:number, poderes:any[], getNombre:()=>string} = {
+    nombre: "Barry Allen",
+    edad: 24,
+    poderes: ["Puede correr", "Viajar en el tiempo"],
+    getNombre(){
+        return this.nombre;
+    }
+};
+
+let superman: {nombre:string, edad:number, poderes:any[], getNombre:()=>string} = {
+    nombre: "Clark Kent",
+    edad: 500,
+    poderes: ["volar"],
+        getNombre(){
+        return this.nombre;
+    }
+};

@@ -23,4 +23,21 @@ Object.defineProperty(exports, "__esModule", { value: true });
 //     edad: 500,
 //     poderes: ["volar"]
 // };
+// Practica para crear tipos especificos en TS
+let flash = {
+    nombre: "Barry Allen",
+    edad: 24,
+    poderes: ["Puede correr", "Viajar en el tiempo"],
+    getNombre() {
+        return this.nombre;
+    }
+};
+let superman = {
+    nombre: "Clark Kent",
+    edad: 500,
+    poderes: ["volar"],
+    getNombre() {
+        return this.nombre;
+    }
+};
 //# sourceMappingURL=app.js.map
